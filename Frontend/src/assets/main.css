@@ -1,35 +1,67 @@
-@import './base.css';
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url(https://fonts.gstatic.com/s/inter/v13/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7SUc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
-a,
-.green {
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E03A7B;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar {
+  position: absolute;
+  left: 0;
+  width: 4px;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: black;
+
+  border: none;
+  outline: none;
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+  list-style: none;
+
+  font-family: "Inter", sans-serif;
+
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+:root {
+  --Main-Background: #212123;
+  --Sistem-pay-active: #411C7B;
+  --Btn-cart:#411C7B;
+  --Card-sistem-pay:#8B5ED3;
+  --Button:#8B55C5;
+  --Line-text:#A069EC;
+  --Card:#29292B;
+  --Rectangle7:#363638;
+  --Title-h2:#6F7579;
+  --Icon:#737A85;
+  --Text:#C0C0C0;
+  --Title-h1:#FEFFFF;
+  --Text-active:#9AB7C8;
+  --Star:#F5BA21;
+  --Stroke:#5C656C;
+  --Stroke2:#7440C5;
 }
+body{
+  height: 100vh;
+  background:  var(--Rectangle7);
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
 }
