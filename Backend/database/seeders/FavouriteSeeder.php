@@ -12,7 +12,7 @@ class FavouriteSeeder extends Seeder
     {
         DB::table('favourites')->insert([
            [
-
+                'user_id' => '1',
            ],
         ]);
     }

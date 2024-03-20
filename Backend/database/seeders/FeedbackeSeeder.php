@@ -10,8 +10,10 @@ class FeedbackeSeeder extends Seeder
 {
     public function run(): void
     {
-        DB::table('products')->insert([
+        DB::table('feedbackes')->insert([
            [
+               'user_id'=>'1',
+               'product_id'=>'1',
                'value' => '4',
            ],
         ]);
